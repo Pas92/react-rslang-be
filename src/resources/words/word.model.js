@@ -4,6 +4,7 @@ const { addMethods } = require('../../utils/toResponse');
 
 const WordsSchema = new Schema(
   {
+    wordId: { type: String, required: true },
     group: { type: Number, required: true },
     page: { type: Number, required: true },
     word: { type: String, required: true, max: 100 },
